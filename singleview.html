@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Singleview</title>
+    <link rel="stylesheet" href="https://use.typekit.net/buu2qyd.css" />
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+
+      body {
+        background-color: black;
+      }
+
+      main {
+        width: 90vw;
+        max-width: 1100px;
+        margin: 0 auto;
+      }
+
+      article {
+        margin-bottom: 10rem;
+        margin: 1rem;
+      }
+
+      article div {
+        margin-bottom: 1rem;
+      }
+
+      .info_boks {
+        border-color: white;
+        border-style: solid;
+        border-width: 1px;
+        padding: 1rem;
+        border-radius: 1rem;
+      }
+
+      .info_boks p {
+        margin-bottom: 0.5rem;
+        text-transform: uppercase;
+        font-family: "tablet-gothic", sans-serif;
+      }
+
+      article div:last-of-type p {
+        text-transform: none;
+      }
+
+      article div:last-of-type {
+        grid-column: span 2;
+      }
+
+      /*********** navigation **********/
+
+      nav img {
+        margin-right: 0;
+        height: 170px;
+        margin-left: 1rem;
+        margin-top: 1rem;
+      }
+
+      nav div:last-of-type {
+        place-self: center end;
+        margin-right: 3rem;
+      }
+      nav {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+      }
+
+      a {
+        color: white;
+        text-decoration: none;
+        font-family: "tablet-gothic", sans-serif;
+        font-size: 0.9rem;
+        margin-top: 1rem;
+        margin-left: 0.6rem;
+      }
+
+      p {
+        color: white;
+        font-family: "tablet-gothic", sans-serif;
+      }
+
+      h2 {
+        color: white;
+        text-align: center;
+
+        text-transform: uppercase;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+        font-size: 1.5rem;
+        font-family: "tablet-gothic", sans-serif;
+      }
+
+      h3 {
+        color: white;
+
+        text-transform: uppercase;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+        font-family: "tablet-gothic", sans-serif;
+      }
+
+      main button {
+        padding: 10px;
+        font-size: 0.8rem;
+        border: solid;
+        cursor: pointer;
+        text-transform: uppercase;
+        margin-bottom: 10rem;
+        padding-right: 15px;
+        padding-left: 15px;
+        font-family: "tablet-gothic", sans-serif;
+        background-color: transparent;
+        color: white;
+        border-color: white;
+        border-radius: 0.8rem;
+        border-width: 1px;
+      }
+
+      img {
+        max-width: 100%;
+      }
+
+      /* footer */
+
+      footer h4 {
+        color: white;
+        font-family: "tablet-gothic", sans-serif;
+        margin-top: 1rem;
+        font-size: 1rem;
+      }
+
+      footer p {
+        font-size: 0.9rem;
+      }
+
+      footer {
+        background-color: black;
+        padding: 3rem;
+      }
+
+      .foot div:last-of-type {
+        display: grid;
+        grid-template-columns: 1fr 1fr 2fr;
+        color: white;
+      }
+
+      footer img {
+        min-width: 40px;
+        max-height: 40px;
+        margin-top: 1rem;
+      }
+
+      @media (min-width: 800px) {
+        a {
+          margin: 2rem;
+          font-size: 1.1rem;
+        }
+        article {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 4rem;
+
+          margin-bottom: 10rem;
+          grid-template-rows: 1fr 1fr;
+        }
+
+        article img {
+          max-height: 350px;
+          place-self: center;
+        }
+
+        main button {
+          margin-top: auto;
+          margin-bottom: auto;
+          margin-left: 2rem;
+        }
+
+        .info_boks {
+          border-style: solid;
+          border-radius: 1rem;
+          border-color: white;
+          padding: 4rem;
+        }
+
+        .info_boks p {
+          margin-bottom: 2rem;
+        }
+
+        /* footer */
+
+        footer h4 {
+          margin-top: 1.1rem;
+        }
+
+        .foot {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+
+          align-self: center;
+          max-width: 1100px;
+        }
+
+        .foot div:last-of-type {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          color: white;
+        }
+        footer {
+          width: 90vw;
+          max-width: 1100px;
+          margin: 0 auto;
+          padding: 2rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav>
+      <div>
+        <!-- indsætter logo -->
+        <a href="index.html"><img src="logoren/logoren.svg" alt="logo" /></a>
+      </div>
+      <div>
+        <!-- henter data fra filter2.html af- overskrift -->
+        <a href="filter2.html#overskrift">STJERNETEGN</a>
+        <a href="">KONTAKT OS</a>
+      </div>
+    </nav>
+    <main>
+      <button>Tilbage</button>
+      <h2 class="stjernetegn"></h2>
+      <article>
+        <img src="" alt="" class="billede" />
+        <div class="info_boks">
+          <p class="dato"></p>
+          <p class="element"></p>
+          <p class="kvalitet"></p>
+          <p class="styrende himmellegeme"></p>
+        </div>
+        <div class="info_boks">
+          <h3 class="stjernetegn"></h3>
+          <p class="beskrivende"></p>
+        </div>
+      </article>
+    </main>
+    <footer>
+      <div class="foot">
+        <div>
+          <h4>ADRESSE</h4>
+          <p>497 Evergreen Rd.</p>
+          <p>Roseville, CA 95673</p>
+        </div>
+        <div>
+          <h4>TELEFON</h4>
+          <p>+44 345 678 903</p>
+        </div>
+        <div>
+          <h4>E-MAIL</h4>
+          <p>adobexd@mail.com</p>
+        </div>
+        <div>
+          <div><img src="socialemedierlogo/fb.svg" alt="facebook" /></div>
+          <div><img src="socialemedierlogo/ig.svg" alt="instagram" /></div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      const id = urlParams.get("id");
+      console.log({ id });
+      let stjernetegn;
+      const url = `https://astro-2b8c.restdb.io/rest/stjernetegn/${id}`;
+      const key = "620f60b034fd6215658587a5";
+      const options = {
+        headers: {
+          "x-apikey": "620f60b034fd6215658587a5",
+        },
+      };
+
+      async function hentData() {
+        console.log("hentData");
+        const respons = await fetch(url, options);
+        stjernetegn = await respons.json();
+        vis();
+      }
+
+      const info = document.querySelectorAll(".info_boks");
+
+      function vis() {
+        console.log(stjernetegn);
+        document.querySelector(".stjernetegn").textContent =
+          stjernetegn.stjernetegn;
+        document.querySelector(".billede").src =
+          "stjernetegn/" + stjernetegn.billede;
+        document.querySelector(".dato").textContent =
+          "Fødselsdag: " + stjernetegn.dato;
+        document.querySelector(".element").textContent =
+          "Element: " + stjernetegn.element;
+        document.querySelector(".kvalitet").textContent =
+          "Kvalitet: " + stjernetegn.kvalitet;
+        document.querySelector(".himmellegeme").textContent =
+          "Himmellegeme: " + stjernetegn.himmellegeme;
+        document.querySelector("h3").textContent =
+          "Om: " + stjernetegn.stjernetegn;
+        document.querySelector(".beskrivende").textContent =
+          stjernetegn.beskrivende;
+        // her defineres det efter hvilket element det er, hvilken farve border skal være
+        if (stjernetegn.element == "Ild") {
+          info.forEach((boks) => {
+            boks.style.borderColor = "#FFA750";
+          });
+        }
+        if (stjernetegn.element == "Vand") {
+          info.forEach((boks) => {
+            boks.style.borderColor = "#1367A2";
+          });
+        }
+        if (stjernetegn.element == "Luft") {
+          info.forEach((boks) => {
+            boks.style.borderColor = "#5762B2";
+          });
+        }
+        if (stjernetegn.element == "Jord") {
+          info.forEach((boks) => {
+            boks.style.borderColor = "#FC7EAB";
+          });
+        }
+      }
+
+      hentData();
+
+      document.querySelector("button").addEventListener("click", () => {
+        history.back();
+      });
+    </script>
+  </body>
+</html>
